@@ -1,0 +1,700 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    width: 100%;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    position: sticky;
+    background: #ffffff;
+    top: 0px;
+    z-index: 88;
+}
+
+nav img {
+    width: 200px;
+}
+
+.header-right {
+    display: flex;
+}
+
+.header-right ul {
+    list-style: none;
+    display: flex;
+}
+
+.header-right ul li {
+    padding: 18px 30px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.header-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-button button {
+    padding: 12px 24px;
+    font-size: 14px;
+    background-color: #b1e505;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.main-section {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    /* padding-bottom: 20px; */
+    position: relative;
+}
+
+
+/* #left-corner {
+    position: absolute;
+    top: 11%;
+    left: 0%;
+    z-index: 98;
+    display: none;
+}
+
+#right-corner {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 98;
+    /* display: none; 
+} */
+
+.semicircle_confetti_img {
+    position: absolute;
+    top: 30%;
+    left: -1%;
+    animation-name: semi-float;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: top;
+}
+
+@keyframes semi-float {
+    from {
+        transform: rotate(0deg) translateX(0px);
+    }
+
+    to {
+        transform: rotate(45deg) translateX(10px);
+
+    }
+
+}
+
+.cs-bg-logo {
+    position: absolute;
+    width: 30%;
+    right: 5%;
+    top: 10%;
+}
+
+.circle-confetti {
+    position: absolute;
+    right: -2%;
+    top: 25%;
+    animation-name: circle-float;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: top;
+}
+
+@keyframes circle-float {
+    from {
+        transform: translate(-10px);
+    }
+
+    to {
+        transform: translate(20px);
+
+    }
+
+}
+
+.grid-wrapper {
+    margin: 0 auto;
+    background: url("./assets/grid_black_img.svg") no-repeat center;
+}
+
+.main-wrapper {
+    /* width: 100%; */
+    padding: 0px 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-heading {
+    color: white;
+    font-size: 5rem;
+    font-weight: 600;
+    margin-top: 60px;
+    line-height: 1.5;
+}
+
+.main-heading span {
+    color: #b1e505;
+}
+
+.main-section-para {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 800;
+    color: #a4a5ab;
+    margin: 0;
+}
+
+.right-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    animation-name: home-float;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: top;
+}
+
+@keyframes home-float {
+    from {
+        transform: rotate(5deg) translateY(0px);
+    }
+
+    to {
+        transform: rotate(0deg) translateY(30px);
+
+    }
+
+}
+
+.triangle-img {
+    position: absolute;
+    right: 0px;
+    bottom: 2%;
+    animation-name: home-triangle-float;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes home-triangle-float {
+    from {
+        transform: rotate(0deg) translateY(0px);
+    }
+
+    to {
+        transform: rotate(45deg) translateY(20px);
+
+    }
+
+}
+
+.right-section img {
+    height: 90vh;
+}
+
+.main-section-button {
+    width: 100%;
+}
+
+.home-certificate,
+.home-app-download {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.home-certificate button {
+    width: 170px;
+    height: 65px;
+    border-radius: 10px;
+    background: transparent;
+    border: .5px solid rgba(255, 255, 255, 0.296);
+    color: white;
+}
+
+.home-app-download img {
+    width: 170px;
+    border: none;
+}
+
+.coinswitch-cares {
+    width: 100%;
+    background: #514ed8;
+}
+
+.coinswitch-cares-page {
+    padding: 44px 50px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.coinswitch-cares-page h3 {
+    font-size: 28px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.coinswitch-cares-page h1 {
+    font-size: 3rem;
+    color: white;
+
+}
+
+.coinswitch-cares-page h1 span {
+    color: #b1e50e;
+}
+
+.transparent-container {
+    display: flex;
+    justify-content: center;
+    margin: 44px 50px 44px 50px;
+}
+
+.container-box {
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background-color: #6260dc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    margin: 0 10px 0;
+    padding: 24px 24px 0;
+    color: white;
+}
+
+.container-box img {
+    margin: 20px 0;
+}
+
+.container-box h4 {
+    text-align: center;
+}
+
+.container-box p {
+    font-size: 14px;
+    padding-bottom: 30px;
+    font-weight: 600;
+}
+
+.container-box h4 {
+    font-size: 24px;
+    margin: 24px 0 8px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 0px 60px;
+    margin: 48px 0px 0px;
+}
+
+.btn button {
+    padding: 16px 100px;
+    background: #b1e505;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0rem 100px;
+}
+
+.coinswitch-pro-page {
+    width: 100%;
+    background: #ffffff;
+}
+
+.pro-page {
+    background: url("./assets/grid-grey.svg") no-repeat center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.cs-pro-logo {
+    width: 200px;
+}
+
+.pro-page h1 {
+    margin: 17px 0px 24px;
+    font-size: 3rem;
+    line-height: 60px;
+}
+
+.pro-feature {
+    display: flex;
+    /* justify-content: space-between; */
+    height: 90px;
+
+}
+
+.pro-feature-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pro-feature-box img {
+    width: 40px;
+    margin: 0px 4rem;
+}
+
+.pro-feature-box p {
+    margin-bottom: 16px;
+    font-size: 18px;
+    color: #a4a5ab;
+}
+
+.pro-page button {
+    padding: 15px 66px;
+    background-color: #cda954;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    margin: 15px 0px;
+}
+
+.cs-bg-logo1 {
+    width: 70%;
+    margin-top: 20px;
+}
+
+.coinswitch-journey {
+    position: relative;
+    height: 800px;
+    padding: 30px 0 50px;
+    background-color: #1b1e2d;
+}
+
+.coinswitch-journey-page {
+    width: 100%;
+    height: 100%;
+    background: url("./assets/grid-black.svg") no-repeat center;
+}
+
+.coins-group-desktop {
+    width: 455px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.h2-box-element {
+    margin: 4rem;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.h2-box-element h2 {
+    width: 100%;
+    color: #a4a5ab;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 44px;
+    margin-bottom: 8px;
+}
+
+.floating {
+    position: relative;
+    overflow: hidden;
+    width: 720px;
+    height: 200px;
+}
+
+.floating-details {
+    height: 100%;
+    /* transition: .3s ease-in-out;
+    animation-name: floating;
+    animation-duration: 12s;
+    /* animation-delay: 5s; 
+    animation-iteration-count: infinite;*/
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-200px);
+    }
+
+    100% {
+        transform: translateY(-400px);
+    }
+}
+
+.floating-details .floating-details-1 {
+    font-size: 5rem;
+    color: #ffa6b1;
+    transition: .3s ease-in-out;
+}
+
+.floating-details .floating-details-2 {
+    transition: .3s ease-in-out;
+    font-size: 5rem;
+    color: #b1e50e;
+}
+
+.floating-details .floating-details-3 {
+    transition: .3s ease-in-out;
+    font-size: 5rem;
+    color: #6b91fc;
+}
+
+.crypto-trends {
+    width: 100%;
+    height: 100%;
+}
+
+.crypto-trends-wrapper {
+    margin: 60px 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.crypto-trends-wrapper h2 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 600;
+}
+
+.home-crypto-trends-container {
+    margin: 48px 12px;
+    display: flex;
+    gap: 20px;
+}
+
+.home-crypto-trend-card {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.home-crypto-trend-card-heading {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.home-crypto-trend-card ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 12px 15px 15px;
+    width: 365px;
+    background-color: #1b1e2d;
+    border-radius: 12px;
+    height: 245px;
+    overflow-y: scroll;
+}
+
+.home-crypto-trend-card ul::-webkit-scrollbar {
+    display: none;
+}
+
+.home-crypto-trend-card ul li {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 6px 0px;
+}
+
+.left-details-card {
+    display: flex;
+    /* align-items: center; */
+}
+
+.left-details-card .series-number {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    margin-right: 25px;
+    color: #fff;
+}
+
+.left-details-card img {
+    width: 24px;
+    height: 24px;
+}
+
+.coin-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.coin-name .crypto-short-name {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.coin-name .crypto-full-name {
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #a4a5ab;
+    margin: 0;
+}
+
+.right-gain-details{
+    color: #54a336;
+    font-weight: 600;
+}
+.right-loose-details{
+    color: #ef2047;
+    font-weight: 600;
+}
+
+.home-crypto-trend-card .latest-news-card{
+    background-color: #efef42;
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.latest-news-card p{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+}
+.random{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.random p{
+    line-height: 20px;
+    font-size: 14px;
+    margin: 0px 0px 16px;
+}
+
+.crypto-trends-wrapper button{
+    padding: 15px 66px;
+    border: none;
+    border-radius: 12px;
+    background-color: #b1e50e;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.global-rating-page-section{
+    /* height: 100vh; */
+    background-color: #1b1e2d;
+    padding: 30px 0px 50px 0px;
+}
+
+.global-crypto-details{
+    margin: 0px 100px;
+    padding-top: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 108px; */
+}
+
+.global-crypto-details h2{
+    color: white;
+    padding: 0px 20px;
+    margin-bottom: 8px;
+    font-size: 3rem;
+}
+
+.container-details{
+    margin: 3rem 5rem 0px;
+    /* padding: 10px; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.global-details{
+    width: 300px;
+}
+
+.global-details h3{
+    margin: 10px 0px;
+    color: #dcdcdd;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.global-details p{
+    color: #a4a5ab;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
